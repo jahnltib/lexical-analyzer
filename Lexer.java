@@ -27,12 +27,12 @@ public class Lexer {
         // Combine patterns
         Pattern tokenPatterns = Pattern.compile(
             String.join("|",
-                "(?<KEYWORD>" + keyword + ")",
-                "(?<IDENTIFIER>" + identifier + ")",
-                "(?<OPERATOR>" + operator + ")",
-                "(?<NUMBER>" + number + ")",
-                "(?<SEPARATOR>" + separator + ")",
-                "(?<STRING>" + stringLiteral + ")"
+                "(?<KEYWORD>" + keyword + ")",        //Named group for keywords
+                "(?<IDENTIFIER>" + identifier + ")",    //Named group for identifiers 
+                "(?<OPERATOR>" + operator + ")",        // Named group for operators 
+                "(?<NUMBER>" + number + ")",            // Named group for numbers  
+                "(?<SEPARATOR>" + separator + ")",    // Named group for separators 
+                "(?<STRING>" + stringLiteral + ")"    // Named group for strings 
             )
         );
 
