@@ -1,6 +1,13 @@
+# Define a function named ‘calc’ that performs a simple arithmetic operation 
 def calc(a, b, op):
-    if op == '+': return a + b
-    elif op == '-': return a - b
-    else: return 0
-
-print(calc(3, 2, '+'))
+# Check if the operator is ‘+’
+    if op == '+': 
+return a + b                 // If true, return the sum of a and b
+# Check if the operator is ‘-’
+    elif op == '-': 
+return a - b                // If true, return the difference of a and b
+    else:
+ return 0                // If operator is not recognized 
+                        // Return 0 as default value
+# Call the ‘calc’ function with arguments of (3,2,’+’)  and print the result  
+print(calc(3, 2, '+'))                // Output
